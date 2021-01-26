@@ -29,15 +29,12 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://127.0.0.1:8000/api',
+        target: 'http://127.0.0.1:8000/api',  // 自己的请求地址
         changeOrigin: true,
         pathRewrite: {
           "^/api": ""
         }
       },
-      // '/goods/*': {
-      //   target: 'http://127.0.0.1:7777'  // 请求本地 需要xmall后台项目 默认127.0.0.1:7777
-      // }
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
